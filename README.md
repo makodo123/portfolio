@@ -1,6 +1,6 @@
 # portfolio
 
-張誠恩（Cheng-En Chang）的個人網站：純 HTML／CSS／JS，沒有建置步驟，部署在 Cloudflare Pages。
+張誠恩（Cheng-En Chang）的個人網站：純 HTML／CSS／JS，沒有建置步驟，部署在 Cloudflare Pages：https://makodo.ccwu.cc
 
 ## 本機預覽
 
