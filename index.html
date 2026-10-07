@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>張誠恩 Cheng-En Chang</title>
+<meta name="description" content="張誠恩 Cheng-En Chang：資工碩士，React + TypeScript 前端與 Gemini API 應用開發，約 14 個月 3C 產品軟硬體驗證經驗。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="張誠恩 Cheng-En Chang">
+<meta property="og:description" content="前端・AI 應用・軟硬體驗證。獨立開發並上線 2 個 AI Web App。">
+<meta name="theme-color" content="#F6F5F1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#12161D" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+
+<header class="bar">
+  <div class="wrap bar-in">
+    <a class="brand" href="#top">CEC<span>.</span></a>
+    <nav class="nav" aria-label="主選單">
+      <a href="#work"><span data-zh>作品</span><span data-en>Work</span></a>
+      <a href="#experience"><span data-zh>經歷</span><span data-en>Experience</span></a>
+      <a href="#skills"><span data-zh>技能</span><span data-en>Skills</span></a>
+      <a href="#contact"><span data-zh>聯絡</span><span data-en>Contact</span></a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-set-lang="zh">中</button>
+      <button type="button" data-set-lang="en">EN</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- HERO -->
+  <section class="hero wrap" id="top">
+    <p class="eyebrow mono"><span class="pulse" aria-hidden="true"></span><span data-zh>可立即到職・彰化員林／可配合台中、新竹、雙北</span><span data-en>Available now · Changhua, Taiwan · open to Taichung, Hsinchu, Taipei</span></p>
+    <h1>張誠恩 <span class="en-name">Cheng-En Chang</span></h1>
+    <p class="role"><span data-zh>前端工程師・AI 應用・軟硬體驗證</span><span data-en>Frontend · AI Applications · Hardware/Software Validation</span></p>
+    <p class="lede">
+      <span data-zh>我把耗時、容易出錯的流程，做成穩定好用的工具；也習慣先證明它是對的，才交出去。資工碩士，熟悉 React、TypeScript 與 Gemini API，另有約 14 個月 3C 產品軟硬體驗證經驗。</span>
+      <span data-en>I turn slow, error-prone workflows into reliable tools, and I prove they work before I ship them. M.S. in Computer Science, experienced with React, TypeScript and the Gemini API, plus about 14 months of 3C product hardware/software validation.</span>
+    </p>
+    <div class="cta">
+      <a class="btn primary" href="#work"><span data-zh>看作品</span><span data-en>See my work</span></a>
+      <a class="btn" href="#contact"><span data-zh>聯絡我</span><span data-en>Get in touch</span></a>
+    </div>
+
+    <dl class="readout" aria-label="重點數字">
+      <div><dt class="mono"><span data-zh>人工 → 工具</span><span data-en>manual → tool</span></dt><dd><b>4 h</b><i>→</i><b>5 min</b></dd><p><span data-zh>1 小時錄音的轉錄時間</span><span data-en>to transcribe a 1-hour recording</span></p></div>
+      <div><dt class="mono">npm test</dt><dd><b>24,132</b><i class="ok">passed</i></dd><p><span data-zh>發票對獎自動化測試</span><span data-en>automated tests, invoice checker</span></p></div>
+      <div><dt class="mono"><span data-zh>驗證實習</span><span data-en>validation</span></dt><dd><b>7</b><i>terms</i></dd><p><span data-zh>寒暑假返任，合計約 14 個月</span><span data-en>seasonal terms, about 14 months</span></p></div>
+    </dl>
+  </section>
+
+  <!-- WORK -->
+  <section class="wrap block" id="work" aria-labelledby="h-work">
+    <h2 id="h-work"><span class="num mono">01</span><span data-zh>作品</span><span data-en>Work</span></h2>
+
+    <article class="project">
+      <header class="p-head">
+        <h3>Gemini 逐字稿大師 <span class="sub" data-en>Gemini Transcription Master</span></h3>
+        <span class="when mono">2026/01 – 2026/09</span>
+      </header>
+      <p class="pitch">
+        <span data-zh>長音檔轉逐字稿的純前端工具，解決 AI API 單次請求長度限制，以及長時間轉錄中途失敗就得整段重來的問題。</span>
+        <span data-en>A frontend-only tool that turns long audio into transcripts. It works around the AI API's per-request length limit and removes the need to restart a long job when it fails midway.</span>
+      </p>
+      <ul class="log">
+        <li><span class="ok mono">PASS</span><span data-zh>實測 1 小時錄音約 5 分鐘完成（自動切成 12 段）；以人工聽打約 4 小時估算，節省 95% 以上時間。</span><span data-en>A 1-hour recording finishes in about 5 minutes (split into 12 chunks), over 95% faster than an estimated 4 hours by hand.</span></li>
+        <li><span class="mono dim">INFO</span><span data-zh>以 Web Audio API 在瀏覽器端切成 5 分鐘片段，最多 3 段同時送 Gemini 轉錄後依時間合併。</span><span data-en>Splits audio into 5-minute chunks in the browser with the Web Audio API, transcribes up to 3 at a time with Gemini, and merges them in order.</span></li>
+        <li><span class="mono dim">INFO</span><span data-zh>保存每段進度可斷點續傳；API 失敗時以指數退避自動重試（最多 3 次）。</span><span data-en>Saves progress per chunk so jobs can resume; failed API calls retry with exponential backoff (up to 3 times).</span></li>
+        <li><span class="mono dim">INFO</span><span data-zh>支援逐字稿與時間戳編輯、TXT／SRT 匯出；音檔不經自建伺服器。</span><span data-en>Editable transcript and timestamps with TXT/SRT export; audio never passes through a self-hosted server.</span></li>
+      </ul>
+      <footer class="p-foot">
+        <ul class="tags mono"><li>React</li><li>TypeScript</li><li>Web Audio API</li><li>Gemini API</li></ul>
+        <div class="links">
+          <a href="https://makodo123.github.io/gemini-Transcription-Master/" target="_blank" rel="noopener">Demo ↗</a>
+          <a href="https://github.com/makodo123/gemini-Transcription-Master" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </footer>
+    </article>
+
+    <article class="project">
+      <header class="p-head">
+        <h3>統一發票智能對獎 <span class="sub" data-en>Smart Invoice Checker</span></h3>
+        <span class="when mono">2026/01 – 2026/09</span>
+      </header>
+      <p class="pitch">
+        <span data-zh>電子發票對獎 Web App，解決逐張手動比對號碼費時又容易看錯的問題：掃描 QR Code 即可對獎，收件匣的電子發票可一次批次檢查。</span>
+        <span data-en>An e-invoice lottery checker that replaces slow, error-prone manual matching: scan a QR code to check instantly, or batch-check every e-invoice in your inbox.</span>
+      </p>
+      <ul class="log">
+        <li><span class="ok mono">PASS</span><span data-zh>以 Vitest 建立自動化測試：6 期財政部真實開獎號碼、各獎級邊界、末三碼 000–999 窮舉，加上 18,000 組隨機比對，共 24,132 組全數通過。</span><span data-en>Vitest suite built on six real draws, every prize-tier boundary, an exhaustive 000–999 sweep and 18,000 random cross-checks: 24,132 cases, all passing.</span></li>
+        <li><span class="mono dim">INFO</span><span data-zh>設計 6 層開獎資料來源備援（含 GitHub Actions 每日同步的官方快照），每層 4 秒逾時，失效即自動切換。</span><span data-en>Six fallback data sources (including an official snapshot synced daily by GitHub Actions), each with a 4-second timeout and automatic failover.</span></li>
+        <li><span class="mono dim">INFO</span><span data-zh>支援手動輸入、QR Code、Gmail 共 3 種對獎方式；QR Code 免呼叫 AI 即可對獎，辨識不到時以 Gemini Vision 備援。</span><span data-en>Three ways to check: manual entry, QR code and Gmail. QR scanning works without AI, with Gemini Vision as a fallback.</span></li>
+        <li><span class="mono dim">INFO</span><span data-zh>以 Google OAuth 2.0 取得授權後，透過 Gmail API 批次掃描收件匣中的電子發票。</span><span data-en>After Google OAuth 2.0 consent, batch-scans inbox e-invoices through the Gmail API.</span></li>
+      </ul>
+      <footer class="p-foot">
+        <ul class="tags mono"><li>React</li><li>TypeScript</li><li>Vite</li><li>Tailwind</li><li>Vitest</li><li>GitHub Actions</li></ul>
+        <div class="links">
+          <a href="https://makodo123.github.io/smart-invoice/" target="_blank" rel="noopener">Demo ↗</a>
+          <a href="https://github.com/makodo123/smart-invoice" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </footer>
+    </article>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="wrap block" id="experience" aria-labelledby="h-exp">
+    <h2 id="h-exp"><span class="num mono">02</span><span data-zh>經歷</span><span data-en>Experience</span></h2>
+    <ol class="timeline">
+      <li>
+        <div class="t-meta mono">2025/11 – 2026/10</div>
+        <div class="t-body">
+          <h3><span data-zh>志願役一等士兵（載波作業兵，兼辦資訊業務）</span><span data-en>Private First Class, Carrier Communications Operator &amp; IT Duties</span></h3>
+          <p class="org"><span data-zh>中華民國國軍</span><span data-en>Republic of China Armed Forces</span></p>
+          <ul>
+            <li><span data-zh>每日依單位 Excel 管理表彙整約 80 支行動裝置的管理資料並核對正確性，供主管逐日檢查、追蹤異常。</span><span data-en>Compiled and checked daily management records for about 80 mobile devices using the unit's Excel tracking sheet, so supervisors could review and follow up every day.</span></li>
+            <li><span data-zh>依保密規範處理資料與文件；每月指定資料準時繳交，服役 11 個月從未延遲。</span><span data-en>Handled data under confidentiality rules; never missed a monthly report deadline in 11 months.</span></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="t-meta mono">2020/07 – 2023/08</div>
+        <div class="t-body">
+          <h3><span data-zh>3C 產品測試寒暑期實習生</span><span data-en>3C Product Test Intern (seasonal)</span></h3>
+          <p class="org"><span data-zh>百佳泰股份有限公司・寒暑假連續 7 期返任，合計約 14 個月</span><span data-en>Allion Labs, Inc. · 7 consecutive seasonal terms, about 14 months</span></p>
+          <ul>
+            <li><span data-zh>執行 NEC、HP、Microsoft Surface 等品牌螢幕、桌上型主機與筆電（3 類產品、每期約 3 個機種）的軟硬體功能驗證與穩定性測試。</span><span data-en>Ran hardware/software functional and stability tests on monitors, desktops and laptops from NEC, HP, Microsoft Surface and others (3 categories, about 3 models per term).</span></li>
+            <li><span data-zh>依 Excel 測試清單（Test Case）逐項執行並記錄結果；發現異常時穩定重現、整理重現步驟，回報工程師協助 Debug 並追蹤至結案。</span><span data-en>Executed test cases from Excel test sheets; reproduced anomalies reliably, documented steps, reported to engineers and tracked issues to closure.</span></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="t-meta mono">2023/08 – 2025/07</div>
+        <div class="t-body">
+          <h3><span data-zh>國立彰化師範大學 資訊工程碩士</span><span data-en>M.S., Computer Science &amp; Information Engineering</span></h3>
+          <p class="org"><span data-zh>論文：5G 專網於智慧醫療中的應用・中華扶輪獎學金（2024–2025）</span><span data-en>National Changhua University of Education · Thesis: Private 5G in Smart Healthcare · Chinese Rotary Scholarship (2024–2025)</span></p>
+        </div>
+      </li>
+      <li>
+        <div class="t-meta mono">2019/08 – 2023/07</div>
+        <div class="t-body">
+          <h3><span data-zh>大葉大學 資訊工程學士</span><span data-en>B.S., Computer Science &amp; Information Engineering</span></h3>
+          <p class="org"><span data-zh>大葉大學</span><span data-en>Da-Yeh University</span></p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="wrap block" id="skills" aria-labelledby="h-skills">
+    <h2 id="h-skills"><span class="num mono">03</span><span data-zh>技能與證照</span><span data-en>Skills &amp; Certifications</span></h2>
+    <div class="skills">
+      <div>
+        <h3><span data-zh>前端</span><span data-en>Frontend</span></h3>
+        <ul class="tags mono"><li>React 19</li><li>TypeScript</li><li>JavaScript ES6+</li><li>Vite</li><li>Tailwind CSS</li><li>HTML5 / CSS3</li><li>RWD</li></ul>
+      </div>
+      <div>
+        <h3><span data-zh>AI／API 整合</span><span data-en>AI &amp; APIs</span></h3>
+        <ul class="tags mono"><li>Gemini API</li><li>Gemini Vision</li><li>Gmail API</li><li>Google OAuth 2.0</li><li>RESTful API</li></ul>
+      </div>
+      <div>
+        <h3><span data-zh>測試與驗證</span><span data-en>Testing &amp; Validation</span></h3>
+        <ul class="tags mono"><li>Vitest</li><li>Test Case</li><li><span data-zh>問題重現與追蹤</span><span data-en>Issue reproduction</span></li><li><span data-zh>穩定性測試</span><span data-en>Stability testing</span></li></ul>
+      </div>
+      <div>
+        <h3><span data-zh>工具</span><span data-en>Tools</span></h3>
+        <ul class="tags mono"><li>Git / GitHub</li><li>GitHub Actions</li><li>GitHub Pages</li><li>Linux</li><li>Python</li><li><span data-zh>AI 輔助開發（Codex）</span><span data-en>AI-assisted dev (Codex)</span></li></ul>
+      </div>
+    </div>
+    <ul class="certs">
+      <li><b>Microsoft Certified: Azure AI Fundamentals (AI-900)</b><span class="mono dim">Microsoft · 2020/12</span></li>
+      <li><b>MSCS: Information Systems Security · Essential of C# Programming</b><span class="mono dim">Microsys · 2021/11</span></li>
+      <li><b>MSCS: Network Infrastructure, Configuring · Big Data, Statistical Analysis · Essential of Software Programming</b><span class="mono dim">Microsys · 2019/11</span></li>
+    </ul>
+    <p class="lang-note"><span data-zh>語言：中文母語；英文閱讀略懂。</span><span data-en>Languages: Mandarin (native); English (basic reading).</span></p>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="wrap block contact" id="contact" aria-labelledby="h-contact">
+    <h2 id="h-contact"><span class="num mono">04</span><span data-zh>聯絡</span><span data-en>Contact</span></h2>
+    <p class="big"><span data-zh>正在找前端、AI 應用或軟硬體驗證的工作，歡迎來信。</span><span data-en>I'm looking for frontend, AI application or validation roles. Feel free to reach out.</span></p>
+    <ul class="contact-list">
+      <li>
+        <span class="mono dim">Email</span>
+        <code id="email">patter891013@gmail.com</code>
+        <button type="button" class="copy" data-copy="patter891013@gmail.com"><span data-zh>複製</span><span data-en>Copy</span></button>
+      </li>
+      <li><span class="mono dim">GitHub</span><a href="https://github.com/makodo123" target="_blank" rel="noopener">github.com/makodo123 ↗</a></li>
+      <li><span class="mono dim">LinkedIn</span><a href="https://www.linkedin.com/in/%E8%AA%A0%E6%81%A9-%E5%BC%B5-9881a6203/" target="_blank" rel="noopener"><span data-zh>張誠恩的 LinkedIn ↗</span><span data-en>Cheng-En Chang on LinkedIn ↗</span></a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="foot wrap mono">
+  <span>© 2026 張誠恩 Cheng-En Chang</span>
+  <span><span data-zh>以純 HTML／CSS 製作，部署於 Cloudflare Pages</span><span data-en>Hand-written HTML/CSS, deployed on Cloudflare Pages</span></span>
+</footer>
+
+<script src="/main.js" defer></script>
+</body>
+</html>
