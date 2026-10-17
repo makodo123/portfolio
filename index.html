@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap">
-<link rel="stylesheet" href="/style.css?v=3">
+<link rel="stylesheet" href="/style.css?v=4">
 </head>
 <body>
 <a class="skip" href="#main">跳到主要內容</a>
@@ -48,6 +48,7 @@
       <span data-en>Recently I planned two web tools built with React, TypeScript and the Gemini API. AI coding assistants (Claude Code and Codex) wrote the code; I tested, revised and deployed them. Both are live and you can try them below. I live in Changhua, Taiwan, and am open to Taichung, Hsinchu, Taoyuan or Taipei.</span>
     </p>
     <p class="quick">
+      <a class="btn" href="/Cheng-En-Chang-resume.pdf" download><span data-zh>下載 PDF 履歷</span><span data-en>Download résumé (PDF, Chinese)</span></a>
       <a href="mailto:patter891013@gmail.com">patter891013@gmail.com</a>
       <a href="https://github.com/makodo123" target="_blank" rel="noopener">GitHub</a>
       <a href="https://www.linkedin.com/in/%E8%AA%A0%E6%81%A9-%E5%BC%B5-9881a6203/" target="_blank" rel="noopener">LinkedIn</a>
@@ -113,42 +114,39 @@
   </section>
 
   <section id="experience" aria-labelledby="h-exp">
-    <h2 id="h-exp"><span data-zh>經歷</span><span data-en>Experience</span></h2>
+    <h2 id="h-exp"><span data-zh>經歷與學歷</span><span data-en>Experience &amp; education</span></h2>
 
-    <div class="job">
-      <p class="when">2025/11 – 2026/10</p>
-      <div>
+    <ol class="timeline">
+      <li class="t-item">
+        <p class="when">2026/01 – 2026/09</p>
+        <h3><span data-zh>個人專案：兩個 AI 網頁工具</span><span data-en>Side projects: two AI web tools</span></h3>
+        <p class="org"><span data-zh>Gemini 逐字稿大師、統一發票智能對獎・以 AI 程式助手開發，我負責規劃、測試與部署</span><span data-en>Gemini Transcription Master and Smart Invoice · built with AI coding assistants; I planned, tested and deployed them</span></p>
+        <p><a href="#work"><span data-zh>看作品</span><span data-en>See the work</span></a></p>
+      </li>
+      <li class="t-item">
+        <p class="when">2025/11 – 2026/10</p>
         <h3><span data-zh>志願役一等士兵（載波作業兵）</span><span data-en>Private First Class, carrier communications operator</span></h3>
         <p class="org"><span data-zh>中華民國陸軍</span><span data-en>Republic of China Army</span></p>
-      </div>
-    </div>
-
-    <div class="job">
-      <p class="when">2020/07 – 2023/08</p>
-      <div>
+      </li>
+      <li class="t-item t-edu">
+        <p class="when">2023/08 – 2025/07</p>
+        <h3><span data-zh>國立彰化師範大學　資訊工程碩士</span><span data-en>M.S. in Computer Science, National Changhua University of Education</span></h3>
+        <p class="org"><span data-zh>論文：5G 專網於智慧醫療中的應用。2024–2025 中華扶輪獎學金。</span><span data-en>Thesis on private 5G networks in smart healthcare. Chinese Rotary Scholarship, 2024–2025.</span></p>
+      </li>
+      <li class="t-item">
+        <p class="when">2020/07 – 2023/08</p>
         <h3><span data-zh>3C 產品測試寒暑期實習生</span><span data-en>3C product test intern (seasonal)</span></h3>
         <p class="org"><span data-zh>百佳泰股份有限公司・寒暑假實習共 7 期，合計約 14 個月</span><span data-en>Allion Labs, Inc. · 7 summer and winter breaks, about 14 months in total</span></p>
         <ul>
           <li><span data-zh>測過 NEC、HP、Microsoft Surface 等品牌的螢幕、桌機和筆電，每期約 3 個機種，做功能驗證和穩定性測試。</span><span data-en>Tested monitors, desktops and laptops from NEC, HP, Microsoft Surface and others, about 3 models per term, for function and stability.</span></li>
           <li><span data-zh>照 Excel 測試清單逐項執行並記錄；遇到異常先穩定重現、寫好步驟，再交給工程師 Debug，一路追到結案。</span><span data-en>Ran test cases from Excel sheets; when something broke I reproduced it reliably, wrote up the steps, handed it to engineers and followed it to closure.</span></li>
         </ul>
-      </div>
-    </div>
-
-    <div class="job">
-      <p class="when">2023/08 – 2025/07</p>
-      <div>
-        <h3><span data-zh>國立彰化師範大學　資訊工程碩士</span><span data-en>M.S. in Computer Science, National Changhua University of Education</span></h3>
-        <p class="org"><span data-zh>論文：5G 專網於智慧醫療中的應用。2024–2025 中華扶輪獎學金。</span><span data-en>Thesis on private 5G networks in smart healthcare. Chinese Rotary Scholarship, 2024–2025.</span></p>
-      </div>
-    </div>
-
-    <div class="job">
-      <p class="when">2019/08 – 2023/07</p>
-      <div>
+      </li>
+      <li class="t-item t-edu">
+        <p class="when">2019/08 – 2023/07</p>
         <h3><span data-zh>大葉大學　資訊工程學士</span><span data-en>B.S. in Computer Science, Da-Yeh University</span></h3>
-      </div>
-    </div>
+      </li>
+    </ol>
   </section>
 
   <section id="skills" aria-labelledby="h-skills">
@@ -177,6 +175,7 @@
       <button type="button" class="copy" data-copy="patter891013@gmail.com"><span data-zh>複製</span><span data-en>Copy</span></button>
     </p>
     <p class="quick">
+      <a class="btn" href="/Cheng-En-Chang-resume.pdf" download><span data-zh>下載 PDF 履歷</span><span data-en>Download résumé (PDF, Chinese)</span></a>
       <a href="https://github.com/makodo123" target="_blank" rel="noopener">github.com/makodo123</a>
       <a href="https://www.linkedin.com/in/%E8%AA%A0%E6%81%A9-%E5%BC%B5-9881a6203/" target="_blank" rel="noopener">LinkedIn</a>
     </p>
