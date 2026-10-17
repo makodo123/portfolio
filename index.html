@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>張誠恩 Cheng-En Chang</title>
-<meta name="description" content="張誠恩 Cheng-En Chang：資工碩士，React + TypeScript 前端與 Gemini API 應用開發，約 14 個月 3C 產品軟硬體驗證經驗。">
+<meta name="description" content="張誠恩 Cheng-En Chang：資工碩士，7 個寒暑假（合計約 14 個月）3C 產品軟硬體驗證實習，以 AI 程式助手開發並上線 2 個 Gemini API 網頁工具。">
 <link rel="canonical" href="https://makodo.ccwu.cc/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://makodo.ccwu.cc/">
 <meta property="og:title" content="張誠恩 Cheng-En Chang">
-<meta property="og:description" content="前端・AI 應用・軟硬體驗證。獨立開發並上線 2 個 AI Web App。">
+<meta property="og:description" content="軟體測試・AI 應用。規劃並上線 2 個以 AI 程式助手開發的 Web App。">
 <meta property="og:image" content="https://makodo.ccwu.cc/img/transcribe.webp">
 <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#16181C" media="(prefers-color-scheme: dark)">
@@ -40,12 +40,12 @@
     <img class="me" src="/img/me.webp" width="480" height="600" alt="張誠恩的照片">
     <h1><span data-zh>你好，我是張誠恩。</span><span data-en>Hi, I'm Cheng-En Chang.</span></h1>
     <p class="lede">
-      <span data-zh>資工碩士，寫前端，也做過約 14 個月的 3C 產品驗證。我喜歡把又慢又容易出錯的流程做成工具，而且會先寫測試確認它是對的，再交給別人用。</span>
-      <span data-en>I have an M.S. in Computer Science, I build frontends, and I spent about 14 months validating 3C products. I like turning slow, error-prone chores into tools, and I write tests to make sure they work before anyone else uses them.</span>
+      <span data-zh>資工碩士，大學時利用 7 個寒暑假在百佳泰做 3C 產品驗證實習（合計約 14 個月）。我喜歡把又慢又容易出錯的流程做成工具，也會先測過、確認它是對的，再交給別人用。</span>
+      <span data-en>I have an M.S. in Computer Science, and during seven summer and winter breaks in college (about 14 months in total) I validated 3C products at Allion Labs. I like turning slow, error-prone chores into tools, and I test them to make sure they work before anyone else uses them.</span>
     </p>
     <p>
-      <span data-zh>最近用 React、TypeScript 和 Gemini API 做了兩個網頁工具，都已上線，下面可以直接試用。目前住彰化員林，<strong>可立即到職</strong>，台中、新竹、雙北都可以配合。</span>
-      <span data-en>Recently I built two web tools with React, TypeScript and the Gemini API. Both are live and you can try them below. I live in Changhua, Taiwan, <strong>can start right away</strong>, and am open to Taichung, Hsinchu or Taipei.</span>
+      <span data-zh>最近規劃了兩個網頁工具，用 React、TypeScript 和 Gemini API，程式交給 AI 程式助手（Claude Code、Codex）寫，我負責測試、修改和部署。兩個都已上線，下面可以直接試用。目前住彰化員林，台中、新竹、桃園、雙北都可以配合。</span>
+      <span data-en>Recently I planned two web tools built with React, TypeScript and the Gemini API. AI coding assistants (Claude Code and Codex) wrote the code; I tested, revised and deployed them. Both are live and you can try them below. I live in Changhua, Taiwan, and am open to Taichung, Hsinchu, Taoyuan or Taipei.</span>
     </p>
     <p class="quick">
       <a href="mailto:patter891013@gmail.com">patter891013@gmail.com</a>
@@ -65,7 +65,7 @@
         <h3>Gemini 逐字稿大師</h3>
         <p class="meta"><span data-zh>個人專案・2026 年 1 月至 9 月</span><span data-en>Side project · Jan–Sep 2026</span></p>
         <p>
-          <span data-zh>把長音檔轉成逐字稿的網頁工具。AI API 一次能吃的長度有限，長時間轉錄中途失敗又得整段重來，所以我讓它在瀏覽器裡把音檔切段、分批送出，再照時間接回去。</span>
+          <span data-zh>把長音檔轉成逐字稿的網頁工具。AI API 一次能吃的長度有限，長時間轉錄中途失敗又得整段重來，所以我把它規劃成在瀏覽器裡把音檔切段、分批送出，再照時間接回去。</span>
           <span data-en>A web tool that turns long audio into transcripts. AI APIs cap how much you can send at once, and a long job that fails midway has to start over, so it splits the audio in the browser, sends the pieces in batches and stitches them back in order.</span>
         </p>
         <ul>
@@ -94,7 +94,7 @@
           <span data-en>Checking receipts one number at a time is slow and easy to get wrong. This app checks a receipt from its QR code instantly, or goes through every e-invoice in your Gmail inbox at once.</span>
         </p>
         <ul>
-          <li><span data-zh>用 Vitest 寫了 24,132 組測試，全部通過：包含 6 期財政部真實開獎號碼、每個獎級的邊界、末三碼 000 到 999 全部跑一遍，再加 18,000 組隨機比對。</span><span data-en>24,132 Vitest cases, all passing: six real draws, every prize-tier boundary, every last-three-digit combination from 000 to 999, and 18,000 random checks.</span></li>
+          <li><span data-zh>專案包含 24,132 組由 AI 產生的 Vitest 測試案例，全部通過：包含 6 期財政部真實開獎號碼、每個獎級的邊界、末三碼 000 到 999 全部跑一遍，再加 18,000 組隨機比對。</span><span data-en>24,132 AI-generated Vitest cases, all passing: six real draws, every prize-tier boundary, every last-three-digit combination from 000 to 999, and 18,000 random checks.</span></li>
           <li><span data-zh>開獎資料有 6 個來源輪流備援，其中一個是 GitHub Actions 每天同步的官方快照；每個來源等 4 秒，沒回應就換下一個。</span><span data-en>Six fallback sources for draw data, one of them an official snapshot synced daily by GitHub Actions; each gets 4 seconds before the next one takes over.</span></li>
           <li><span data-zh>手動輸入、QR Code、Gmail 三種對法。掃 QR Code 不用呼叫 AI，讀不到才交給 Gemini Vision。</span><span data-en>Three ways to check: typing, QR code and Gmail. QR scanning needs no AI; Gemini Vision only steps in when a code can't be read.</span></li>
         </ul>
@@ -118,12 +118,8 @@
     <div class="job">
       <p class="when">2025/11 – 2026/10</p>
       <div>
-        <h3><span data-zh>志願役一等士兵（載波作業兵，兼辦資訊業務）</span><span data-en>Private First Class, carrier communications operator with IT duties</span></h3>
-        <p class="org"><span data-zh>中華民國國軍</span><span data-en>Republic of China Armed Forces</span></p>
-        <ul>
-          <li><span data-zh>每天用單位的 Excel 管理表彙整約 80 支行動裝置的資料並核對，讓主管逐日檢查、追蹤異常。</span><span data-en>Compiled and checked daily records for about 80 mobile devices in the unit's Excel sheet so supervisors could review them every day.</span></li>
-          <li><span data-zh>依保密規範處理文件；服役 11 個月，每月資料從沒遲交過。</span><span data-en>Handled documents under confidentiality rules; never missed a monthly deadline in 11 months.</span></li>
-        </ul>
+        <h3><span data-zh>志願役一等士兵（載波作業兵）</span><span data-en>Private First Class, carrier communications operator</span></h3>
+        <p class="org"><span data-zh>中華民國陸軍</span><span data-en>Republic of China Army</span></p>
       </div>
     </div>
 
@@ -131,7 +127,7 @@
       <p class="when">2020/07 – 2023/08</p>
       <div>
         <h3><span data-zh>3C 產品測試寒暑期實習生</span><span data-en>3C product test intern (seasonal)</span></h3>
-        <p class="org"><span data-zh>百佳泰股份有限公司・寒暑假連續回去 7 期，合計約 14 個月</span><span data-en>Allion Labs, Inc. · came back for 7 straight school breaks, about 14 months in total</span></p>
+        <p class="org"><span data-zh>百佳泰股份有限公司・寒暑假實習共 7 期，合計約 14 個月</span><span data-en>Allion Labs, Inc. · 7 summer and winter breaks, about 14 months in total</span></p>
         <ul>
           <li><span data-zh>測過 NEC、HP、Microsoft Surface 等品牌的螢幕、桌機和筆電，每期約 3 個機種，做功能驗證和穩定性測試。</span><span data-en>Tested monitors, desktops and laptops from NEC, HP, Microsoft Surface and others, about 3 models per term, for function and stability.</span></li>
           <li><span data-zh>照 Excel 測試清單逐項執行並記錄；遇到異常先穩定重現、寫好步驟，再交給工程師 Debug，一路追到結案。</span><span data-en>Ran test cases from Excel sheets; when something broke I reproduced it reliably, wrote up the steps, handed it to engineers and followed it to closure.</span></li>
@@ -158,14 +154,14 @@
   <section id="skills" aria-labelledby="h-skills">
     <h2 id="h-skills"><span data-zh>會用的東西</span><span data-en>What I work with</span></h2>
     <dl class="skills">
-      <dt><span data-zh>前端</span><span data-en>Frontend</span></dt>
+      <dt><span data-zh>作品技術</span><span data-en>Project stack</span></dt>
       <dd>React 19、TypeScript、JavaScript、Vite、Tailwind CSS、HTML/CSS、RWD</dd>
       <dt><span data-zh>AI 與 API</span><span data-en>AI &amp; APIs</span></dt>
       <dd>Gemini API、Gemini Vision、Gmail API、Google OAuth 2.0、REST API</dd>
       <dt><span data-zh>測試與驗證</span><span data-en>Testing</span></dt>
-      <dd><span data-zh>Vitest、Test Case 撰寫與執行、問題重現與追蹤、穩定性測試</span><span data-en>Vitest, writing and running test cases, issue reproduction and tracking, stability testing</span></dd>
+      <dd><span data-zh>Test Case 執行與記錄、問題重現與追蹤、穩定性測試</span><span data-en>Running and recording test cases, issue reproduction and tracking, stability testing</span></dd>
       <dt><span data-zh>其他</span><span data-en>Other</span></dt>
-      <dd><span data-zh>Git／GitHub、GitHub Actions、Linux、Python、用 Codex 輔助開發</span><span data-en>Git/GitHub, GitHub Actions, Linux, Python, AI-assisted coding with Codex</span></dd>
+      <dd><span data-zh>Git／GitHub、GitHub Actions、Linux、Python（基礎）、AI 輔助開發（Claude Code、Codex）</span><span data-en>Git/GitHub, GitHub Actions, Linux, Python (basic), AI-assisted coding (Claude Code, Codex)</span></dd>
       <dt><span data-zh>證照</span><span data-en>Certificates</span></dt>
       <dd><span data-zh>Microsoft Azure AI Fundamentals（AI-900，2020）；MSCS 資訊系統安全、C# 程式設計（2021）；MSCS 網路架構、大數據統計分析、軟體程式設計（2019）</span><span data-en>Microsoft Azure AI Fundamentals (AI-900, 2020); MSCS Information Systems Security and C# Programming (2021); MSCS Network Infrastructure, Big Data Statistical Analysis and Software Programming (2019)</span></dd>
       <dt><span data-zh>語言</span><span data-en>Languages</span></dt>
@@ -175,7 +171,7 @@
 
   <section id="contact" aria-labelledby="h-contact">
     <h2 id="h-contact"><span data-zh>聯絡</span><span data-en>Contact</span></h2>
-    <p><span data-zh>我正在找前端、AI 應用或軟硬體驗證相關的工作。有適合的職缺，或想看更多細節，寫信給我最快。</span><span data-en>I'm looking for frontend, AI application or validation roles. If you have something that fits or want more detail, email is the quickest way to reach me.</span></p>
+    <p><span data-zh>我正在找軟體測試、軟硬體驗證、MIS 或 AI 應用相關的工作。有適合的職缺，或想看更多細節，寫信給我最快。</span><span data-en>I'm looking for software testing, validation, MIS or AI application roles. If you have something that fits or want more detail, email is the quickest way to reach me.</span></p>
     <p class="mail">
       <span id="email">patter891013@gmail.com</span>
       <button type="button" class="copy" data-copy="patter891013@gmail.com"><span data-zh>複製</span><span data-en>Copy</span></button>
@@ -188,7 +184,7 @@
 </main>
 
 <footer class="foot wrap">
-  <p><span data-zh>© 2026 張誠恩。手寫 HTML／CSS，放在 Cloudflare Pages。</span><span data-en>© 2026 Cheng-En Chang. Hand-written HTML/CSS, hosted on Cloudflare Pages.</span></p>
+  <p><span data-zh>© 2026 張誠恩。放在 Cloudflare Pages。</span><span data-en>© 2026 Cheng-En Chang. Hosted on Cloudflare Pages.</span></p>
 </footer>
 
 <script src="/main.js?v=3" defer></script>
