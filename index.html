@@ -11,181 +11,204 @@
 <meta property="og:title" content="張誠恩 Cheng-En Chang">
 <meta property="og:description" content="軟體測試・AI 應用。規劃並上線 2 個以 AI 程式助手開發的 Web App。">
 <meta property="og:image" content="https://makodo.ccwu.cc/img/transcribe.webp">
-<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#16181C" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#16181C">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap">
-<link rel="stylesheet" href="/style.css?v=4">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap">
+<link rel="stylesheet" href="/style.css?v=5">
 </head>
 <body>
 <a class="skip" href="#main">跳到主要內容</a>
 
-<header class="top wrap">
-  <a class="brand" href="/" aria-label="張誠恩 Cheng-En Chang，回到首頁">張誠恩<small>Cheng-En</small></a>
-  <nav class="nav" aria-label="主選單">
-    <a href="#work"><span data-zh>作品</span><span data-en>Work</span></a>
-    <a href="#experience"><span data-zh>經歷</span><span data-en>Experience</span></a>
-    <a href="#contact"><span data-zh>聯絡</span><span data-en>Contact</span></a>
-  </nav>
-  <div class="lang" role="group" aria-label="Language">
-    <button type="button" data-set-lang="zh">中文</button>
-    <button type="button" data-set-lang="en">English</button>
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="#hero" aria-label="張誠恩 Cheng-En Chang，回到頂端">張誠恩</a>
+    <nav class="nav" aria-label="主選單">
+      <a href="#about"><span data-zh>關於</span><span data-en>About</span></a>
+      <a href="#work"><span data-zh>作品</span><span data-en>Work</span></a>
+      <a href="#experience"><span data-zh>經歷</span><span data-en>Experience</span></a>
+      <a href="#contact"><span data-zh>聯絡</span><span data-en>Contact</span></a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-set-lang="zh">中文</button>
+      <button type="button" data-set-lang="en">EN</button>
+    </div>
   </div>
 </header>
 
-<main id="main" class="wrap">
-  <section class="intro">
+<section id="hero" class="hero" aria-label="張誠恩">
+  <canvas class="sky" aria-hidden="true"></canvas>
+  <div class="hero-in">
     <img class="me" src="/img/me.webp" width="480" height="600" alt="張誠恩的照片">
-    <h1><span data-zh>你好，我是張誠恩。</span><span data-en>Hi, I'm Cheng-En Chang.</span></h1>
-    <p class="lede">
-      <span data-zh>資工碩士，大學時利用 7 個寒暑假在百佳泰做 3C 產品驗證實習（合計約 14 個月）。我喜歡把又慢又容易出錯的流程做成工具，也會先測過、確認它是對的，再交給別人用。</span>
-      <span data-en>I have an M.S. in Computer Science, and during seven summer and winter breaks in college (about 14 months in total) I validated 3C products at Allion Labs. I like turning slow, error-prone chores into tools, and I test them to make sure they work before anyone else uses them.</span>
-    </p>
-    <p>
-      <span data-zh>最近規劃了兩個網頁工具，用 React、TypeScript 和 Gemini API，程式交給 AI 程式助手（Claude Code、Codex）寫，我負責測試、修改和部署。兩個都已上線，下面可以直接試用。目前住彰化員林，台中、新竹、桃園、雙北都可以配合。</span>
-      <span data-en>Recently I planned two web tools built with React, TypeScript and the Gemini API. AI coding assistants (Claude Code and Codex) wrote the code; I tested, revised and deployed them. Both are live and you can try them below. I live in Changhua, Taiwan, and am open to Taichung, Hsinchu, Taoyuan or Taipei.</span>
-    </p>
-    <p class="quick">
-      <a class="btn" href="/Cheng-En-Chang-resume.pdf" download><span data-zh>下載 PDF 履歷</span><span data-en>Download résumé (PDF, Chinese)</span></a>
-      <a href="mailto:patter891013@gmail.com">patter891013@gmail.com</a>
-      <a href="https://github.com/makodo123" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://www.linkedin.com/in/%E8%AA%A0%E6%81%A9-%E5%BC%B5-9881a6203/" target="_blank" rel="noopener">LinkedIn</a>
-    </p>
-  </section>
+    <h1>張誠恩<span class="en-name">Cheng-En Chang</span></h1>
+    <p class="tagline"><span data-zh>軟體測試・3C 驗證・AI 工具</span><span data-en>Tester, Validator &amp; AI Tool Builder</span></p>
+    <ul class="icons" aria-label="連結">
+      <li><a href="https://github.com/makodo123" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.690-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.170 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.7 5.38-5.27 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg></a></li>
+      <li><a href="https://www.linkedin.com/in/%E8%AA%A0%E6%81%A9-%E5%BC%B5-9881a6203/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg></a></li>
+      <li><a href="mailto:patter891013@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm.8 2v.3l8.2 5.6 8.2-5.6V7H3.8Zm16.4 2.7-7.6 5.2a1 1 0 0 1-1.2 0L3.8 9.7V17h16.4V9.7Z"/></svg></a></li>
+      <li><a href="/Cheng-En-Chang-resume.pdf" download aria-label="下載 PDF 履歷"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l6 6v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1Zm7 1.8V9h5.2L13 3.8ZM11 11v5.6l-2.1-2.1-1.4 1.4L12 20.4l4.5-4.5-1.4-1.4-2.1 2.1V11h-2Z"/></svg></a></li>
+    </ul>
+    <p class="hero-cta"><a class="btn" href="/Cheng-En-Chang-resume.pdf" download><span data-zh>下載 PDF 履歷</span><span data-en>Download résumé (PDF, Chinese)</span></a></p>
+  </div>
+  <a class="down" href="#about" aria-label="往下看"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16.5 4.5 9l1.4-1.4 6.1 6.1 6.1-6.1L19.5 9 12 16.5Z"/></svg></a>
+</section>
 
-  <section id="work" aria-labelledby="h-work">
-    <h2 id="h-work"><span data-zh>作品</span><span data-en>Work</span></h2>
-
-    <article class="project">
-      <a class="shot" href="https://makodo123.github.io/gemini-Transcription-Master/" target="_blank" rel="noopener">
-        <img src="/img/transcribe.webp" width="1400" height="671" loading="lazy" alt="Gemini 逐字稿大師的上傳畫面">
-      </a>
-      <div class="p-text">
-        <h3>Gemini 逐字稿大師</h3>
-        <p class="meta"><span data-zh>個人專案・2026 年 1 月至 9 月</span><span data-en>Side project · Jan–Sep 2026</span></p>
-        <p>
-          <span data-zh>把長音檔轉成逐字稿的網頁工具。AI API 一次能吃的長度有限，長時間轉錄中途失敗又得整段重來，所以我把它規劃成在瀏覽器裡把音檔切段、分批送出，再照時間接回去。</span>
-          <span data-en>A web tool that turns long audio into transcripts. AI APIs cap how much you can send at once, and a long job that fails midway has to start over, so it splits the audio in the browser, sends the pieces in batches and stitches them back in order.</span>
+<main id="main">
+  <section id="about" class="band" aria-labelledby="h-about">
+    <div class="wrap">
+      <h2 id="h-about"><span data-zh>關於我</span><span data-en>About</span></h2>
+      <div class="about">
+        <p class="lede">
+          <span data-zh>資工碩士，大學時利用 7 個寒暑假在百佳泰做 3C 產品驗證實習（合計約 14 個月）。我喜歡把又慢又容易出錯的流程做成工具，也會先測過、確認它是對的，再交給別人用。</span>
+          <span data-en>I have an M.S. in Computer Science, and during seven summer and winter breaks in college (about 14 months in total) I validated 3C products at Allion Labs. I like turning slow, error-prone chores into tools, and I test them to make sure they work before anyone else uses them.</span>
         </p>
-        <ul>
-          <li><span data-zh>1 小時的錄音大約 5 分鐘轉完；人工聽打估計要 4 小時。</span><span data-en>A 1-hour recording takes about 5 minutes; typing it by hand would take an estimated 4 hours.</span></li>
-          <li><span data-zh>用 Web Audio API 切成 5 分鐘一段，最多 3 段同時送 Gemini。</span><span data-en>Web Audio API cuts it into 5-minute chunks, up to 3 sent to Gemini at a time.</span></li>
-          <li><span data-zh>每段進度都會保存，斷線可以接著跑；API 失敗會自動重試，最多 3 次。</span><span data-en>Progress is saved per chunk so a job can resume; failed calls retry up to 3 times.</span></li>
-          <li><span data-zh>可以直接改逐字稿和時間戳，匯出 TXT／SRT。音檔不會經過我的伺服器。</span><span data-en>Edit the text and timestamps, then export TXT or SRT. Audio never touches my server.</span></li>
-        </ul>
-        <p class="stack"><span data-zh>React、TypeScript、Web Audio API、Gemini API</span><span data-en>React, TypeScript, Web Audio API, Gemini API</span></p>
-        <p class="links">
-          <a href="https://makodo123.github.io/gemini-Transcription-Master/" target="_blank" rel="noopener"><span data-zh>開啟網站</span><span data-en>Open the app</span></a>
-          <a href="https://github.com/makodo123/gemini-Transcription-Master" target="_blank" rel="noopener"><span data-zh>原始碼</span><span data-en>Source code</span></a>
+        <p>
+          <span data-zh>最近規劃了兩個網頁工具，用 React、TypeScript 和 Gemini API，程式交給 AI 程式助手（Claude Code、Codex）寫，我負責測試、修改和部署。兩個都已上線，下面可以直接試用。目前住彰化員林，台中、新竹、桃園、雙北都可以配合。</span>
+          <span data-en>Recently I planned two web tools built with React, TypeScript and the Gemini API. AI coding assistants (Claude Code and Codex) wrote the code; I tested, revised and deployed them. Both are live and you can try them below. I live in Changhua, Taiwan, and am open to Taichung, Hsinchu, Taoyuan or Taipei.</span>
+        </p>
+        <p class="aside">
+          <span data-zh>寫程式之前，我比較常碰的是硬體。大學時常幫同學和家人重灌系統、換硬碟和記憶體；有一台電腦開不了機，我一個一個零件換著試，最後查出是記憶體和電源的問題。後來做驗證工作時，這種「先穩定重現、再縮小範圍」的習慣一直很好用。</span>
+          <span data-en>Before I wrote much code, I mostly worked with hardware. In college I reinstalled systems and swapped drives and memory for classmates and family. One PC wouldn't boot at all; swapping parts one by one, I traced it to the memory and the power supply. That habit of reproducing a problem first and then narrowing it down served me well in validation work later.</span>
         </p>
       </div>
-    </article>
+    </div>
+  </section>
 
-    <article class="project">
-      <a class="shot" href="https://makodo123.github.io/smart-invoice/" target="_blank" rel="noopener">
-        <img src="/img/invoice.webp" width="1400" height="788" loading="lazy" alt="統一發票智能對獎的開獎號碼畫面">
-      </a>
-      <div class="p-text">
-        <h3>統一發票智能對獎</h3>
-        <p class="meta"><span data-zh>個人專案・2026 年 1 月至 9 月</span><span data-en>Side project · Jan–Sep 2026</span></p>
-        <p>
-          <span data-zh>一張一張對發票號碼很花時間，也容易看錯。這個工具可以掃 QR Code 馬上對獎，也能一次檢查 Gmail 收件匣裡所有的電子發票。</span>
-          <span data-en>Checking receipts one number at a time is slow and easy to get wrong. This app checks a receipt from its QR code instantly, or goes through every e-invoice in your Gmail inbox at once.</span>
-        </p>
-        <ul>
-          <li><span data-zh>專案包含 24,132 組由 AI 產生的 Vitest 測試案例，全部通過：包含 6 期財政部真實開獎號碼、每個獎級的邊界、末三碼 000 到 999 全部跑一遍，再加 18,000 組隨機比對。</span><span data-en>24,132 AI-generated Vitest cases, all passing: six real draws, every prize-tier boundary, every last-three-digit combination from 000 to 999, and 18,000 random checks.</span></li>
-          <li><span data-zh>開獎資料有 6 個來源輪流備援，其中一個是 GitHub Actions 每天同步的官方快照；每個來源等 4 秒，沒回應就換下一個。</span><span data-en>Six fallback sources for draw data, one of them an official snapshot synced daily by GitHub Actions; each gets 4 seconds before the next one takes over.</span></li>
-          <li><span data-zh>手動輸入、QR Code、Gmail 三種對法。掃 QR Code 不用呼叫 AI，讀不到才交給 Gemini Vision。</span><span data-en>Three ways to check: typing, QR code and Gmail. QR scanning needs no AI; Gemini Vision only steps in when a code can't be read.</span></li>
-        </ul>
-        <p class="stack"><span data-zh>React、TypeScript、Vite、Tailwind CSS、Vitest、GitHub Actions、Gmail API</span><span data-en>React, TypeScript, Vite, Tailwind CSS, Vitest, GitHub Actions, Gmail API</span></p>
-        <p class="links">
-          <a href="https://makodo123.github.io/smart-invoice/" target="_blank" rel="noopener"><span data-zh>開啟網站</span><span data-en>Open the app</span></a>
-          <a href="https://github.com/makodo123/smart-invoice" target="_blank" rel="noopener"><span data-zh>原始碼</span><span data-en>Source code</span></a>
-        </p>
+  <section id="work" class="band" aria-labelledby="h-work">
+    <div class="wrap wide">
+      <h2 id="h-work"><span data-zh>作品</span><span data-en>Work</span></h2>
+      <div class="cards">
+        <article class="card c-indigo">
+          <a class="shot" href="https://makodo123.github.io/gemini-Transcription-Master/" target="_blank" rel="noopener">
+            <img src="/img/transcribe.webp" width="1400" height="671" loading="lazy" alt="Gemini 逐字稿大師的上傳畫面">
+          </a>
+          <div class="card-body">
+            <h3>Gemini 逐字稿大師</h3>
+            <p class="meta"><span data-zh>個人專案・2026 年 1 月至 9 月</span><span data-en>Side project · Jan–Sep 2026</span></p>
+            <p>
+              <span data-zh>把長音檔轉成逐字稿的網頁工具。AI API 一次能吃的長度有限，長時間轉錄中途失敗又得整段重來，所以我把它規劃成在瀏覽器裡把音檔切段、分批送出，再照時間接回去。</span>
+              <span data-en>A web tool that turns long audio into transcripts. AI APIs cap how much you can send at once, and a long job that fails midway has to start over, so it splits the audio in the browser, sends the pieces in batches and stitches them back in order.</span>
+            </p>
+            <ul>
+              <li><span data-zh>1 小時的錄音大約 5 分鐘轉完；人工聽打估計要 4 小時。</span><span data-en>A 1-hour recording takes about 5 minutes; typing it by hand would take an estimated 4 hours.</span></li>
+              <li><span data-zh>用 Web Audio API 切成 5 分鐘一段，最多 3 段同時送 Gemini。</span><span data-en>Web Audio API cuts it into 5-minute chunks, up to 3 sent to Gemini at a time.</span></li>
+              <li><span data-zh>每段進度都會保存，斷線可以接著跑；API 失敗會自動重試，最多 3 次。</span><span data-en>Progress is saved per chunk so a job can resume; failed calls retry up to 3 times.</span></li>
+              <li><span data-zh>可以直接改逐字稿和時間戳，匯出 TXT／SRT。音檔不會經過我的伺服器。</span><span data-en>Edit the text and timestamps, then export TXT or SRT. Audio never touches my server.</span></li>
+            </ul>
+            <p class="stack">React・TypeScript・Web Audio API・Gemini API</p>
+            <p class="links">
+              <a href="https://makodo123.github.io/gemini-Transcription-Master/" target="_blank" rel="noopener"><span data-zh>開啟網站</span><span data-en>Open the app</span></a>
+              <a href="https://github.com/makodo123/gemini-Transcription-Master" target="_blank" rel="noopener"><span data-zh>原始碼</span><span data-en>Source code</span></a>
+            </p>
+          </div>
+        </article>
+
+        <article class="card c-crimson">
+          <a class="shot" href="https://makodo123.github.io/smart-invoice/" target="_blank" rel="noopener">
+            <img src="/img/invoice.webp" width="1400" height="788" loading="lazy" alt="統一發票智能對獎的開獎號碼畫面">
+          </a>
+          <div class="card-body">
+            <h3>統一發票智能對獎</h3>
+            <p class="meta"><span data-zh>個人專案・2026 年 1 月至 9 月</span><span data-en>Side project · Jan–Sep 2026</span></p>
+            <p>
+              <span data-zh>一張一張對發票號碼很花時間，也容易看錯。這個工具可以掃 QR Code 馬上對獎，也能一次檢查 Gmail 收件匣裡所有的電子發票。</span>
+              <span data-en>Checking receipts one number at a time is slow and easy to get wrong. This app checks a receipt from its QR code instantly, or goes through every e-invoice in your Gmail inbox at once.</span>
+            </p>
+            <ul>
+              <li><span data-zh>專案包含 24,132 組由 AI 產生的 Vitest 測試案例，全部通過：包含 6 期財政部真實開獎號碼、每個獎級的邊界、末三碼 000 到 999 全部跑一遍，再加 18,000 組隨機比對。</span><span data-en>24,132 AI-generated Vitest cases, all passing: six real draws, every prize-tier boundary, every last-three-digit combination from 000 to 999, and 18,000 random checks.</span></li>
+              <li><span data-zh>開獎資料有 6 個來源輪流備援，其中一個是 GitHub Actions 每天同步的官方快照；每個來源等 4 秒，沒回應就換下一個。</span><span data-en>Six fallback sources for draw data, one of them an official snapshot synced daily by GitHub Actions; each gets 4 seconds before the next one takes over.</span></li>
+              <li><span data-zh>手動輸入、QR Code、Gmail 三種對法。掃 QR Code 不用呼叫 AI，讀不到才交給 Gemini Vision。</span><span data-en>Three ways to check: typing, QR code and Gmail. QR scanning needs no AI; Gemini Vision only steps in when a code can't be read.</span></li>
+            </ul>
+            <p class="stack">React・TypeScript・Vite・Tailwind CSS・Vitest・GitHub Actions・Gmail API</p>
+            <p class="links">
+              <a href="https://makodo123.github.io/smart-invoice/" target="_blank" rel="noopener"><span data-zh>開啟網站</span><span data-en>Open the app</span></a>
+              <a href="https://github.com/makodo123/smart-invoice" target="_blank" rel="noopener"><span data-zh>原始碼</span><span data-en>Source code</span></a>
+            </p>
+          </div>
+        </article>
       </div>
-    </article>
-
-    <p class="aside">
-      <span data-zh>寫程式之前，我比較常碰的是硬體。大學時常幫同學和家人重灌系統、換硬碟和記憶體；有一台電腦開不了機，我一個一個零件換著試，最後查出是記憶體和電源的問題。後來做驗證工作時，這種「先穩定重現、再縮小範圍」的習慣一直很好用。</span>
-      <span data-en>Before I wrote much code, I mostly worked with hardware. In college I reinstalled systems and swapped drives and memory for classmates and family. One PC wouldn't boot at all; swapping parts one by one, I traced it to the memory and the power supply. That habit of reproducing a problem first and then narrowing it down served me well in validation work later.</span>
-    </p>
+    </div>
   </section>
 
-  <section id="experience" aria-labelledby="h-exp">
-    <h2 id="h-exp"><span data-zh>經歷與學歷</span><span data-en>Experience &amp; education</span></h2>
-
-    <ol class="timeline">
-      <li class="t-item">
-        <p class="when">2026/01 – 2026/09</p>
-        <h3><span data-zh>個人專案：兩個 AI 網頁工具</span><span data-en>Side projects: two AI web tools</span></h3>
-        <p class="org"><span data-zh>Gemini 逐字稿大師、統一發票智能對獎・以 AI 程式助手開發，我負責規劃、測試與部署</span><span data-en>Gemini Transcription Master and Smart Invoice · built with AI coding assistants; I planned, tested and deployed them</span></p>
-        <p><a href="#work"><span data-zh>看作品</span><span data-en>See the work</span></a></p>
-      </li>
-      <li class="t-item">
-        <p class="when">2025/11 – 2026/10</p>
-        <h3><span data-zh>志願役一等士兵（載波作業兵）</span><span data-en>Private First Class, carrier communications operator</span></h3>
-        <p class="org"><span data-zh>中華民國陸軍</span><span data-en>Republic of China Army</span></p>
-      </li>
-      <li class="t-item t-edu">
-        <p class="when">2023/08 – 2025/07</p>
-        <h3><span data-zh>國立彰化師範大學　資訊工程碩士</span><span data-en>M.S. in Computer Science, National Changhua University of Education</span></h3>
-        <p class="org"><span data-zh>論文：5G 專網於智慧醫療中的應用。2024–2025 中華扶輪獎學金。</span><span data-en>Thesis on private 5G networks in smart healthcare. Chinese Rotary Scholarship, 2024–2025.</span></p>
-      </li>
-      <li class="t-item">
-        <p class="when">2020/07 – 2023/08</p>
-        <h3><span data-zh>3C 產品測試寒暑期實習生</span><span data-en>3C product test intern (seasonal)</span></h3>
-        <p class="org"><span data-zh>百佳泰股份有限公司・寒暑假實習共 7 期，合計約 14 個月</span><span data-en>Allion Labs, Inc. · 7 summer and winter breaks, about 14 months in total</span></p>
-        <ul>
-          <li><span data-zh>測過 NEC、HP、Microsoft Surface 等品牌的螢幕、桌機和筆電，每期約 3 個機種，做功能驗證和穩定性測試。</span><span data-en>Tested monitors, desktops and laptops from NEC, HP, Microsoft Surface and others, about 3 models per term, for function and stability.</span></li>
-          <li><span data-zh>照 Excel 測試清單逐項執行並記錄；遇到異常先穩定重現、寫好步驟，再交給工程師 Debug，一路追到結案。</span><span data-en>Ran test cases from Excel sheets; when something broke I reproduced it reliably, wrote up the steps, handed it to engineers and followed it to closure.</span></li>
-        </ul>
-      </li>
-      <li class="t-item t-edu">
-        <p class="when">2019/08 – 2023/07</p>
-        <h3><span data-zh>大葉大學　資訊工程學士</span><span data-en>B.S. in Computer Science, Da-Yeh University</span></h3>
-      </li>
-    </ol>
+  <section id="experience" class="band" aria-labelledby="h-exp">
+    <div class="wrap">
+      <h2 id="h-exp"><span data-zh>經歷與學歷</span><span data-en>Experience &amp; education</span></h2>
+      <ol class="timeline">
+        <li class="t-item">
+          <p class="when">2026/01 – 2026/09</p>
+          <h3><span data-zh>個人專案：兩個 AI 網頁工具</span><span data-en>Side projects: two AI web tools</span></h3>
+          <p class="org"><span data-zh>Gemini 逐字稿大師、統一發票智能對獎・以 AI 程式助手開發，我負責規劃、測試與部署</span><span data-en>Gemini Transcription Master and Smart Invoice · built with AI coding assistants; I planned, tested and deployed them</span></p>
+          <p><a href="#work"><span data-zh>看作品</span><span data-en>See the work</span></a></p>
+        </li>
+        <li class="t-item">
+          <p class="when">2025/11 – 2026/10</p>
+          <h3><span data-zh>志願役一等士兵（載波作業兵）</span><span data-en>Private First Class, carrier communications operator</span></h3>
+          <p class="org"><span data-zh>中華民國陸軍</span><span data-en>Republic of China Army</span></p>
+        </li>
+        <li class="t-item t-edu">
+          <p class="when">2023/08 – 2025/07</p>
+          <h3><span data-zh>國立彰化師範大學　資訊工程碩士</span><span data-en>M.S. in Computer Science, National Changhua University of Education</span></h3>
+          <p class="org"><span data-zh>論文：5G 專網於智慧醫療中的應用。2024–2025 中華扶輪獎學金。</span><span data-en>Thesis on private 5G networks in smart healthcare. Chinese Rotary Scholarship, 2024–2025.</span></p>
+        </li>
+        <li class="t-item">
+          <p class="when">2020/07 – 2023/08</p>
+          <h3><span data-zh>3C 產品測試寒暑期實習生</span><span data-en>3C product test intern (seasonal)</span></h3>
+          <p class="org"><span data-zh>百佳泰股份有限公司・寒暑假實習共 7 期，合計約 14 個月</span><span data-en>Allion Labs, Inc. · 7 summer and winter breaks, about 14 months in total</span></p>
+          <ul>
+            <li><span data-zh>測過 NEC、HP、Microsoft Surface 等品牌的螢幕、桌機和筆電，每期約 3 個機種，做功能驗證和穩定性測試。</span><span data-en>Tested monitors, desktops and laptops from NEC, HP, Microsoft Surface and others, about 3 models per term, for function and stability.</span></li>
+            <li><span data-zh>照 Excel 測試清單逐項執行並記錄；遇到異常先穩定重現、寫好步驟，再交給工程師 Debug，一路追到結案。</span><span data-en>Ran test cases from Excel sheets; when something broke I reproduced it reliably, wrote up the steps, handed it to engineers and followed it to closure.</span></li>
+          </ul>
+        </li>
+        <li class="t-item t-edu">
+          <p class="when">2019/08 – 2023/07</p>
+          <h3><span data-zh>大葉大學　資訊工程學士</span><span data-en>B.S. in Computer Science, Da-Yeh University</span></h3>
+        </li>
+      </ol>
+    </div>
   </section>
 
-  <section id="skills" aria-labelledby="h-skills">
-    <h2 id="h-skills"><span data-zh>會用的東西</span><span data-en>What I work with</span></h2>
-    <dl class="skills">
-      <dt><span data-zh>作品技術</span><span data-en>Project stack</span></dt>
-      <dd>React 19、TypeScript、JavaScript、Vite、Tailwind CSS、HTML/CSS、RWD</dd>
-      <dt><span data-zh>AI 與 API</span><span data-en>AI &amp; APIs</span></dt>
-      <dd>Gemini API、Gemini Vision、Gmail API、Google OAuth 2.0、REST API</dd>
-      <dt><span data-zh>測試與驗證</span><span data-en>Testing</span></dt>
-      <dd><span data-zh>Test Case 執行與記錄、問題重現與追蹤、穩定性測試</span><span data-en>Running and recording test cases, issue reproduction and tracking, stability testing</span></dd>
-      <dt><span data-zh>其他</span><span data-en>Other</span></dt>
-      <dd><span data-zh>Git／GitHub、GitHub Actions、Linux、Python（基礎）、AI 輔助開發（Claude Code、Codex）</span><span data-en>Git/GitHub, GitHub Actions, Linux, Python (basic), AI-assisted coding (Claude Code, Codex)</span></dd>
-      <dt><span data-zh>證照</span><span data-en>Certificates</span></dt>
-      <dd><span data-zh>Microsoft Azure AI Fundamentals（AI-900，2020）；MSCS 資訊系統安全、C# 程式設計（2021）；MSCS 網路架構、大數據統計分析、軟體程式設計（2019）</span><span data-en>Microsoft Azure AI Fundamentals (AI-900, 2020); MSCS Information Systems Security and C# Programming (2021); MSCS Network Infrastructure, Big Data Statistical Analysis and Software Programming (2019)</span></dd>
-      <dt><span data-zh>語言</span><span data-en>Languages</span></dt>
-      <dd><span data-zh>中文母語，英文閱讀略懂</span><span data-en>Mandarin (native), basic English reading</span></dd>
-    </dl>
+  <section id="skills" class="band" aria-labelledby="h-skills">
+    <div class="wrap">
+      <h2 id="h-skills"><span data-zh>會用的東西</span><span data-en>What I work with</span></h2>
+      <dl class="skills">
+        <dt><span data-zh>作品技術</span><span data-en>Project stack</span></dt>
+        <dd>React 19、TypeScript、JavaScript、Vite、Tailwind CSS、HTML/CSS、RWD</dd>
+        <dt><span data-zh>AI 與 API</span><span data-en>AI &amp; APIs</span></dt>
+        <dd>Gemini API、Gemini Vision、Gmail API、Google OAuth 2.0、REST API</dd>
+        <dt><span data-zh>測試與驗證</span><span data-en>Testing</span></dt>
+        <dd><span data-zh>Test Case 執行與記錄、問題重現與追蹤、穩定性測試</span><span data-en>Running and recording test cases, issue reproduction and tracking, stability testing</span></dd>
+        <dt><span data-zh>其他</span><span data-en>Other</span></dt>
+        <dd><span data-zh>Git／GitHub、GitHub Actions、Linux、Python（基礎）、AI 輔助開發（Claude Code、Codex）</span><span data-en>Git/GitHub, GitHub Actions, Linux, Python (basic), AI-assisted coding (Claude Code, Codex)</span></dd>
+        <dt><span data-zh>證照</span><span data-en>Certificates</span></dt>
+        <dd><span data-zh>Microsoft Azure AI Fundamentals（AI-900，2020）；MSCS 資訊系統安全、C# 程式設計（2021）；MSCS 網路架構、大數據統計分析、軟體程式設計（2019）</span><span data-en>Microsoft Azure AI Fundamentals (AI-900, 2020); MSCS Information Systems Security and C# Programming (2021); MSCS Network Infrastructure, Big Data Statistical Analysis and Software Programming (2019)</span></dd>
+        <dt><span data-zh>語言</span><span data-en>Languages</span></dt>
+        <dd><span data-zh>中文母語，英文閱讀略懂</span><span data-en>Mandarin (native), basic English reading</span></dd>
+      </dl>
+    </div>
   </section>
 
-  <section id="contact" aria-labelledby="h-contact">
-    <h2 id="h-contact"><span data-zh>聯絡</span><span data-en>Contact</span></h2>
-    <p><span data-zh>我正在找軟體測試、軟硬體驗證、MIS 或 AI 應用相關的工作。有適合的職缺，或想看更多細節，寫信給我最快。</span><span data-en>I'm looking for software testing, validation, MIS or AI application roles. If you have something that fits or want more detail, email is the quickest way to reach me.</span></p>
-    <p class="mail">
-      <span id="email">patter891013@gmail.com</span>
-      <button type="button" class="copy" data-copy="patter891013@gmail.com"><span data-zh>複製</span><span data-en>Copy</span></button>
-    </p>
-    <p class="quick">
-      <a class="btn" href="/Cheng-En-Chang-resume.pdf" download><span data-zh>下載 PDF 履歷</span><span data-en>Download résumé (PDF, Chinese)</span></a>
-      <a href="https://github.com/makodo123" target="_blank" rel="noopener">github.com/makodo123</a>
-      <a href="https://www.linkedin.com/in/%E8%AA%A0%E6%81%A9-%E5%BC%B5-9881a6203/" target="_blank" rel="noopener">LinkedIn</a>
-    </p>
+  <section id="contact" class="band" aria-labelledby="h-contact">
+    <div class="wrap">
+      <h2 id="h-contact"><span data-zh>聯絡</span><span data-en>Contact</span></h2>
+      <p><span data-zh>我正在找軟體測試、軟硬體驗證、MIS 或 AI 應用相關的工作。有適合的職缺，或想看更多細節，寫信給我最快。</span><span data-en>I'm looking for software testing, validation, MIS or AI application roles. If you have something that fits or want more detail, email is the quickest way to reach me.</span></p>
+      <p class="mail">
+        <span id="email">patter891013@gmail.com</span>
+        <button type="button" class="copy" data-copy="patter891013@gmail.com"><span data-zh>複製</span><span data-en>Copy</span></button>
+      </p>
+      <p class="quick">
+        <a class="btn" href="/Cheng-En-Chang-resume.pdf" download><span data-zh>下載 PDF 履歷</span><span data-en>Download résumé (PDF, Chinese)</span></a>
+        <a href="https://github.com/makodo123" target="_blank" rel="noopener">github.com/makodo123</a>
+        <a href="https://www.linkedin.com/in/%E8%AA%A0%E6%81%A9-%E5%BC%B5-9881a6203/" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+    </div>
   </section>
 </main>
 
-<footer class="foot wrap">
+<footer class="foot">
   <p><span data-zh>© 2026 張誠恩。放在 Cloudflare Pages。</span><span data-en>© 2026 Cheng-En Chang. Hosted on Cloudflare Pages.</span></p>
 </footer>
 
-<script src="/main.js?v=3" defer></script>
+<script src="/main.js?v=4" defer></script>
 </body>
 </html>
